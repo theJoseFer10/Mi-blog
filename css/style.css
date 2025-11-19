@@ -12,6 +12,12 @@ body {
     padding: 20px;
 }
 
+.about-me-photo{
+    width: 200px;
+    border: 2px solid #000000;
+    box-shadow: 2px 2px 0px #333;
+}
+
 /* --- ESTILO DEL ENCABEZADO Y BANNER (HEADER) --- */
 
 #header-blog {
@@ -29,7 +35,6 @@ body {
     text-transform: uppercase;
     text-shadow: 1px 1px 0 #0000ff; 
 }
-
 
 /* --- ESTILO DE LA BARRA DE NAVEGACIÓN (NAV) --- */
 #nav-blog {
@@ -190,4 +195,9 @@ body {
     gap: 15px;
     margin-top: 10px;
     width: 40px;
+}
+
+ul, ol{
+    list-style: none;
+    padding: 0;
 }
