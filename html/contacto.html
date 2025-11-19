@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/validacion.js"></script>
+    <title>Contacto</title>
+</head>
+<body>
+    <header id="header-blog">
+        <h1>Información de contacto.</h1>
+        <nav id="nav-blog">
+            <div id="logo-container">
+                <a href="../index.html">
+                    <img id="logo-blog" src="/imgs/fredbear.webp" alt="logo del blog" />
+                </a>
+            </div>
+            <div id="menu-blog">
+                <a href="acercaDeMi.html">Acerca de mi</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="articulos.html">Articulos</a>
+            </div>
+        </nav>
+    </header>
+    <main id="main-content">
+        <section id="form-content">
+            <h3>Si quieres contactarme escribe un correo en el siguiente formulario.</h3>
+            <form action="#" class="mail-form">
+                <div>
+                    <label for="emisor">Escribe tu dirección de correo electronico.</label>
+                    <input type="email" id="emisor" name="emisor" required>
+                </div>
+                <div>
+                    <label for="asunto">Asunto.</label>
+                    <input type="text" id="asunto" name="asunto" required>
+                </div>
+                <div>
+                    <label for="mensaje">Escribe tu mensaje.</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn_enviar" onclick="return validarFormulario()">
+                    <img src="../imgs/mail.png" alt="icono de correo">
+                    Enviar
+                </button>
+            </form>
+        </section>
+        <section id="article-content">
+            <article class="article">
+                <h2>Mis redes sociales y contactos.</h2>
+                <p class="article-content">
+                    Si deseas contactarme a través de mis redes sociales, aquí tienes mis principales perfiles:
+                </p>
+                <ul class="social-links">
+                    <li>
+                        <a href="https://www.linkedin.com/in/jose-fernando-arenas-camacho-20a44532a/">
+                            <img src="../imgs/linkedin.png" alt="Icono de linkedin" class="icons-social">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/theJoseFer10">
+                            <img src="../imgs/github.png" alt="Icono de github" class="icons-social">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/fer1092003/">
+                            <img src="../imgs/instagram.png" alt="Icono de instagram" class="icons-social">
+                        </a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <footer class="footer-blog">
+        <small>
+            © 2025 El blog de fer. Todos los derechos reservados.
+        </small>
+    </footer>
+</body>
+</html>

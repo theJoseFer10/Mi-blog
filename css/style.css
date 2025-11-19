@@ -1,0 +1,193 @@
+/* --- RESET BÁSICO Y FUENTE RETRO --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Verdana', 'Tahoma', sans-serif;
+}
+
+body {
+    background-color: #808080;
+    color: black;
+    padding: 20px;
+}
+
+/* --- ESTILO DEL ENCABEZADO Y BANNER (HEADER) --- */
+
+#header-blog {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-bottom: 5px;
+    border: 2px solid white;
+    box-shadow: 2px 2px 0px #333;
+}
+
+#header-blog h1 {
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 #0000ff; 
+}
+
+
+/* --- ESTILO DE LA BARRA DE NAVEGACIÓN (NAV) --- */
+#nav-blog {
+    background-color: #c0c0c0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;    
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-bottom: 2px solid #555;
+    border-right: 2px solid #555;
+}
+
+#logo-blog {
+    width: 80px;
+    height: auto;
+}
+
+#menu-blog {
+    display: flex;
+    gap: 10px;
+}
+
+#menu-blog a {
+    text-decoration: none;
+    color: white;
+    background-color: #0000ff;
+    padding: 8px 12px;
+    font-weight: bold;    
+    border-top: 2px solid #000080;
+    border-left: 2px solid #000080;
+    border-bottom: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+}
+
+#menu-blog a:hover {
+    background-color: #3333ff;
+    cursor: pointer;
+}
+
+/* --- ESTILO DEL CONTENIDO PRINCIPAL --- */
+#main-content {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-bottom: 2px solid #555;
+    border-right: 2px solid #555;
+}
+
+.article {
+    margin-bottom: 30px;
+}
+
+.article-title {
+    color: #cc0000;
+    border-bottom: 1px solid #c0c0c0;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.footer-blog{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-bottom: 2px solid #555;
+    border-right: 2px solid #555;
+}
+
+/*--Estilo para formularios--*/
+#form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-bottom: 2px solid #808080;
+    border-right: 2px solid #808080;
+}
+
+.mail-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mail-form input, 
+.mail-form textarea {
+    padding: 8px;
+    border-radius: 0;     
+    background-color: #ffffff;    
+    border: none;
+    border-top: 2px solid #808080;
+    border-left: 2px solid #808080;
+    border-bottom: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    font-family: 'Verdana', 'Tahoma', sans-serif;
+}
+
+.mail-form input[type="email"],
+.mail-form input[type="text"],
+.mail-form textarea {
+    width: 100%;
+}
+
+.mail-form button {
+    width: 120px;
+    padding: 8px;
+    background-color: #c0c0c0;
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-bottom: 2px solid #333333;
+    border-right: 2px solid #333333;
+    box-shadow: 1px 1px 0 #000000;    
+    align-self: flex-start; 
+}
+
+.mail-form button:active {
+    border-top: 2px solid #333333;
+    border-left: 2px solid #333333;
+    border-bottom: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    transform: translate(1px, 1px);
+    box-shadow: none;
+}
+
+.btn_enviar img{
+    width: 20px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.social-links{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.icons-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    width: 40px;
+}
